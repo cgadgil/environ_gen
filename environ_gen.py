@@ -20,6 +20,7 @@ register(
 envs_init_py_template = Template("""from gym_foo.envs.${env_name}_env import ${cap_env_name}Env
 """)
 
+# From https://medium.com/@apoddar573/making-your-own-custom-environment-in-gym-c3b65ff8cdaa
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('--name', help='Environment Name')
